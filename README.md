@@ -9,11 +9,12 @@ In this project, dashboards have been created for two different data sources:
 ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/DataSources.jpg "Data Sources")
 
 Individual dashboards have been given below for the data sources:
-<br>
+
  - **MySQL Database**
  ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/Sales_Dashboard.jpg "Sales_Dashboard")
  <br>
  <br>
+ 
  - **AWS CloudWatch**
  ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/CloudWatchDashboard/CloudWatchDashboard.jpg "AWS_Cloudwatch_Dashboard")
  <br>
