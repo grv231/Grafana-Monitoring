@@ -5,7 +5,8 @@
 This project is aimed at displaying the power of Grafana dashboards which are solwly being adopted into major organizations as monitoring tool for log analytics and data analysis. Grafana is a data visalization tool which greatly enhaces the visualization power of legacy Graphite DB and StatsD framework.
 
 In this project, dashboards have been created for two different data sources:
-![alt text](https://github.com/grv231/Grafana-Monitoring/tree/master/Images/DataSources.jpg "Data Sources")
+
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/DataSources.jpg "Data Sources")
 
 Individual dashboards have been given below for the data sources:
 <br>
