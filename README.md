@@ -53,6 +53,7 @@ The Sales dashboard consists of metric for Average Sales represented in:
 Features used in the Sales Trend are:
  
 - Annotations have been used in Grafana to determine **Good Sales** in termns of values that are calculated from the queries.
+
 ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/Annotations.jpg "Annotations")
 
 - Moreover, when we dive deep in the creation of annotations, we can see that the data source has been selected as MySQL and Query consists of Macros that have been mentioned in the *Data sources* folder. These Macros are great shortcuts that can be used with Grafana
