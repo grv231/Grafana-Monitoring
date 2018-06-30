@@ -100,20 +100,37 @@ Grafana here has been configured with the AWS EC2 instance running in us-west-1 
 
 - For this, we first need to create an S3 bucket in AWS as that would be an external storage for the Incoming images for Slack.
 
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SlackIntegration/S3Bucket.jpg "S3Bucket")
+
 
 - Secondly, a user need to be created for S3 with pulic access enabled on S3 bucket and user has AmazonS3FullAccess policy selected.
+
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SlackIntegration/IAMUser.jpg "IAM_User")
 
 
 - Thirdly, we create a channel on Slack to recieve the alerts raised from grafana and use the *web hooks* plugin to recieve the email.
 
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SlackIntegration/SlackChannel.jpg "SlackChannel")
+
 
 - Configure in the dashboard for the webhook created in Slack so that Grafana knows where to send the notification along with image.
+
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SlackIntegration/SlackIntegrationGrafana.jpg "Slack_IntegrationGrafana")
 
 
 - Create an **Alert Rule** on the dashboard (Cloudwatch). In this case, it was if CPU Utilization goes above 2 points.
 
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SlackIntegration/AlertRule.jpg "AlertRule")
+
 
 - Test it by saving the alert rule!
+
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SlackIntegration/AlertNotificationSlack.jpg "AlertNotification")
+
+- Detailed Image of alert notification. A message can be added here as well (Not in this picture)
+
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SlackIntegration/AlertImageSlack.jpg "DetailedAlert")
+ 
 
 
  
