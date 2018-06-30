@@ -43,13 +43,11 @@ Here are the metrics calculated for the Sales and CLoudwatch dashboard:
  - **SALES DASHBOARD**
  
  ### :one: Sales Trend
- 
  ![alt text] (https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/SalesTrend.jpg "SalesTrend")
  
 Features used in the Sales Trend are:
  
   - Annotations have been used in Grafana to determine **Good Sales** in termns of values that are calculated from the queries data.
-
 ![alt text] (https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/Annotations.jpg "Annotations")
 
  - Moreover, when we dive deep in the creation of annotations, we can see that the data source has been selected as MySQL and Query consists of Macros that have been mentioned in the *Data sources* folder. These Macros are great shortcuts that can be used with Grafana
