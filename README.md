@@ -38,9 +38,13 @@ Individual dashboards have been given below for the data sources:
 3. *Images*: Contains elaborate images for metrics calculation and main dashboards.
 
 ## Metrics determined:
-Here are the metrics calculated for the Sales and CLoudwatch dashboard:
+Here are the metrics calculated for the Sales and Cloudwatch dashboard:
 
  - **SALES DASHBOARD**
+ The Sales dashboard consists of metric for Average Sales represented in:
+ 1. Graph Panel
+ 2. Tabular Data Panel
+ 3. Heatmap Panel
  
  ### :one: Sales Trend
  ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/SalesTrend.jpg "SalesTrend")
@@ -58,5 +62,8 @@ Features used in the Sales Trend are:
  
 ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/VariablesCreation.jpg "Variables_Creation")
  
- 
+  - Use of variables gives us the added functionality of changing the dashboards dynamically on the fly. It helps us select the Products: *Jeans* and *Shirt* seperately and using the *all* function as well for both the Products together in one Graph Panel.
+
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/Variables_Dropdown.jpg "Variables_Dropdown")
+  
  
