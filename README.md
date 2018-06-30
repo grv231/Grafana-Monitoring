@@ -5,20 +5,17 @@
 This project is aimed at isplaying the power of Grafana dashboards which are solwly being adopted into major organizations as monitoring tool for log analytics and data analysis. Grafana is a data visalization tool which greatly enhaces the visualization power of legacy Graphite DB and StatsD framework.
 
 In this project, dashboards have been created for two different data sources:
-
 ![alt text](https://github.com/grv231/Grafana-Monitoring/tree/master/Images/DataSources.jpg "Data Sources")
 <br>
 <br>
 Individual dashboards have been given below for the data sources:
 <br>
  - **MySQL Database**
-<br>
  ![alt text](https://github.com/grv231/Grafana-Monitoring/tree/master/Images/SalesDashboard/Sales_Dashboard.jpg "Sales_Dashboard")
  <br>
  <br>
  - **AWS CloudWatch**
- <br>
- ![alt text](https://github.com/grv231/Grafana-Monitoring/tree/master/Images/CloudWatchDashboard/CLoudWatchDashboard.jpg "AWS_Cloudwatch_Dashboard")
+ ![alt text](https://github.com/grv231/Grafana-Monitoring/tree/master/Images/CloudWatchDashboard/CloudWatchDashboard.jpg "AWS_Cloudwatch_Dashboard")
  <br>
  <br>
 
