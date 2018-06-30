@@ -48,15 +48,15 @@ Here are the metrics calculated for the Sales and CLoudwatch dashboard:
 Features used in the Sales Trend are:
  
   - Annotations have been used in Grafana to determine **Good Sales** in termns of values that are calculated from the queries data.
-![alt text] (https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/Annotations.jpg "Annotations")
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/Annotations.jpg "Annotations")
 
  - Moreover, when we dive deep in the creation of annotations, we can see that the data source has been selected as MySQL and Query consists of Macros that have been mentioned in the *Data sources* folder. These Macros are great shortcuts that can be used with Grafana
  
-![alt text] (https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/AnnotationsCreation.jpg "Annotations_Creation")
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/AnnotationsCreation.jpg "Annotations_Creation")
 
  - Variables are used to give us the simulated effect of drop down list in grafana. It is used here for giving us the options of two separate products namely *Jeans* and *Shirts*. Here we select multi value and *include all options* for displaying in the select drop down list
  
-![alt text] (https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/VariablesCreation.jpg "Variables_Creation")
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/VariablesCreation.jpg "Variables_Creation")
  
  
  
