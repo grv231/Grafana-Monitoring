@@ -10,12 +10,12 @@ In this project, dashboards have been created for two different data sources:
 
 Individual dashboards have been given below for the data sources:
 
- - **MySQL Database**
+- **MySQL Database**
  
  ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/Sales_Dashboard.jpg "Sales_Dashboard")
  <br>
  
- - **AWS CloudWatch**
+- **AWS CloudWatch**
  
  ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/CloudWatchDashboard/CloudWatchDashboard.jpg "AWS_Cloudwatch_Dashboard")
  <br>
@@ -41,7 +41,8 @@ Individual dashboards have been given below for the data sources:
 Here are the metrics calculated for the Sales and Cloudwatch dashboard:
 
 ### **SALES DASHBOARD**
- The Sales dashboard consists of metric for Average Sales represented in:
+The Sales dashboard consists of metric for Average Sales represented in:
+
  1. Graph Panel
  2. Tabular Data Panel
  3. Heatmap Panel
@@ -51,29 +52,31 @@ Here are the metrics calculated for the Sales and Cloudwatch dashboard:
  
 Features used in the Sales Trend are:
  
-  - Annotations have been used in Grafana to determine **Good Sales** in termns of values that are calculated from the queries data.
+- Annotations have been used in Grafana to determine **Good Sales** in termns of values that are calculated from the queries.
 ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/Annotations.jpg "Annotations")
 
- - Moreover, when we dive deep in the creation of annotations, we can see that the data source has been selected as MySQL and Query consists of Macros that have been mentioned in the *Data sources* folder. These Macros are great shortcuts that can be used with Grafana
+- Moreover, when we dive deep in the creation of annotations, we can see that the data source has been selected as MySQL and Query consists of Macros that have been mentioned in the *Data sources* folder. These Macros are great shortcuts that can be used with Grafana
  
 ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/AnnotationsCreation.jpg "Annotations_Creation")
 
- - Variables are used to give us the simulated effect of drop down list in grafana. It is used here for giving us the options of two separate products namely *Jeans* and *Shirts*. Here we select multi value and *include all options* for displaying in the select drop down list
+- Variables are used to give us the simulated effect of drop down list in grafana. It is used here for giving us the options of two separate products namely *Jeans* and *Shirts*. Here we select multi value and *include all options* for displaying in the select drop down list
  
 ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/VariablesCreation.jpg "Variables_Creation")
  
-  - Use of variables gives us the added functionality of changing the dashboards dynamically on the fly. It helps us select the Products: *Jeans* and *Shirt* seperately and using the *all* function as well for both the Products together in one Graph Panel.
+- Use of variables gives us the added functionality of changing the dashboards dynamically on the fly. It helps us select the Products: *Jeans* and *Shirt* seperately and using the *all* function as well for both the Products together in one Graph Panel.
 
 ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/Variables_Dropdown.jpg "Variables_Dropdown")
 
 
 ### **AWS CLOUDWATCH METRICS DASHBOARD**
  The Cloudwatch dashboard consists of metrics calculated for *CPUUtilization*, *NetworkIn vs NetworkOut* and *NetworkIn* separately represented in following panels:
+ 
  1. Graph Panel
  2. Piechart Panel
  3. D3 Gauge Panel
   
 #### Cloudwatch Metrics Trend
+
 :one: CPU Utilization
 Grafana here has been configured with the AWS EC2 instance running in us-west-1 region to gather various AWS Cloudwatch metrics. In this case, *CPUUtilization* metric is used to make a dashboard for metrics of Cloudwatch to monitor CPU activity of EC2 instance. The configuration consist of using the **instance-id** parameter of EC2 instance to conect to EC2 instance and develop the dashboard.
  
