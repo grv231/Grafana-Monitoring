@@ -43,7 +43,7 @@ Here are the metrics calculated for the Sales and CLoudwatch dashboard:
  - **SALES DASHBOARD**
  
  ### :one: Sales Trend
- ![alt text] (https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/SalesTrend.jpg "SalesTrend")
+ ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/SalesTrend.jpg "SalesTrend")
  
 Features used in the Sales Trend are:
  
