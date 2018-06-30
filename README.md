@@ -40,13 +40,13 @@ Individual dashboards have been given below for the data sources:
 ## Metrics determined:
 Here are the metrics calculated for the Sales and Cloudwatch dashboard:
 
- - **SALES DASHBOARD**
+### **SALES DASHBOARD**
  The Sales dashboard consists of metric for Average Sales represented in:
  1. Graph Panel
  2. Tabular Data Panel
  3. Heatmap Panel
  
- ### :one: Sales Trend
+ #### Sales Trend
  ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/SalesTrend.jpg "SalesTrend")
  
 Features used in the Sales Trend are:
@@ -65,5 +65,29 @@ Features used in the Sales Trend are:
   - Use of variables gives us the added functionality of changing the dashboards dynamically on the fly. It helps us select the Products: *Jeans* and *Shirt* seperately and using the *all* function as well for both the Products together in one Graph Panel.
 
 ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/SalesDashboard/Variables_Dropdown.jpg "Variables_Dropdown")
+
+
+### **AWS CLOUDWATCH METRICS DASHBOARD**
+ The Cloudwatch dashboard consists of metrics calculated for *CPUUtilization*, *NetworkIn vs NetworkOut* and *NetworkIn* separately represented in following panels:
+ 1. Graph Panel
+ 2. Piechart Panel
+ 3. D3 Gauge Panel
   
+#### Cloudwatch Metrics Trend
+:one: CPU Utilization
+Grafana here has been configured with the AWS EC2 instance running in us-west-1 region to gather various AWS Cloudwatch metrics. In this case, *CPUUtilization* metric is used to make a dashboard for metrics of Cloudwatch to monitor CPU activity of EC2 instance. The configuration consist of using the **instance-id** parameter of EC2 instance to conect to EC2 instance and develop the dashboard.
+ 
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/CloudWatchDashboard/CPUUtil_configuration_EC2.jpg "CPU_Utilization_EC2")
+
+:two: Network In vs Network Out
+Grafana here has been configured with the AWS EC2 instance running in us-west-1 region to compare the Network In vs Network out for the EC2 instance. It helps us gives the representation of the network monitoring for the instance and easy display on the dashboard. These values dynamically change as network in vs out increases/decreses
+
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/CloudWatchDashboard/NetworkStats.jpg "NetworkStats")
+
+:three: Network Out
+Grafana here has been configured with the AWS EC2 instance running in us-west-1 region to simulate a speedometer effect for Network out cloudwatch mertric for the EC2 instance. It helps us gives the representation of the network monitoring for the instance and easy display on the dashboard. These values dynamically change as out increases/decreses and gives great effect of value increasing/decreasing
+
+![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/CloudWatchDashboard/NetworkOut.jpg "NetworkOut")
+
+
  
