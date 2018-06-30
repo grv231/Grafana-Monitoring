@@ -4,6 +4,8 @@
 
 This project is aimed at displaying the power of Grafana dashboards which are solwly being adopted into major organizations as monitoring tool for log analytics and data analysis. Grafana is a data visalization tool which greatly enhaces the visualization power of legacy Graphite DB and StatsD framework.
 
+Finally we do a **Slack Integration** of a Cloudwatch Dashboard to alert people on slack channel in case a suitable CPU Utilization goes up for a rule created in Dashboard.
+
 In this project, dashboards have been created for two different data sources:
 
 ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/DataSources.jpg "Data Sources")
@@ -92,6 +94,26 @@ Grafana here has been configured with the AWS EC2 instance running in us-west-1 
 Grafana here has been configured with the AWS EC2 instance running in us-west-1 region to simulate a speedometer effect for Network out cloudwatch mertric for the EC2 instance. It helps us gives the representation of the network monitoring for the instance and easy display on the dashboard. These values dynamically change as out increases/decreses and gives great effect of value increasing/decreasing
 
 ![alt text](https://github.com/grv231/Grafana-Monitoring/blob/master/Images/CloudWatchDashboard/NetworkOut.jpg "NetworkOut")
+
+
+### **SLACK INTEGRATION**
+
+- For this, we first need to create an S3 bucket in AWS as that would be an external storage for the Incoming images for Slack.
+
+
+- Secondly, a user need to be created for S3 with pulic access enabled on S3 bucket and user has AmazonS3FullAccess policy selected.
+
+
+- Thirdly, we create a channel on Slack to recieve the alerts raised from grafana and use the *web hooks* plugin to recieve the email.
+
+
+- Configure in the dashboard for the webhook created in Slack so that Grafana knows where to send the notification along with image.
+
+
+- Create an **Alert Rule** on the dashboard (Cloudwatch). In this case, it was if CPU Utilization goes above 2 points.
+
+
+- Test it by saving the alert rule!
 
 
  
